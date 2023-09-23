@@ -1,0 +1,26 @@
+/*.registration-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 50px;
+}*/
+ion-card {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-card-content {
+    padding: 20px;
+  }
+
+  .or-label {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0; /* Adjust the margin as needed */
+    padding-left: 127px;
+  }
+  

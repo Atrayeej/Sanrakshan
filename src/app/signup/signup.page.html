@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--<div class="registration-buttons">
+    <ion-button expand="full" (click)="signUp()">Sign up</ion-button>
+    </div>-->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Signup</ion-card-title>
+        <!--<ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+      </ion-card-header>
+    
+      <ion-card-content>
+        <form (ngSubmit)="onSignup()">
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" required></ion-input>
+          </ion-item>
+          <ion-button expand="full" type="submit" (click)="signUp()">Sign Up</ion-button>
+        
+          <ion-label class="or-label">OR</ion-label>
+        
+    <a href="https://www.google.com" target="_blank">
+      <ion-button expand="full">Sign Up with Google</ion-button>
+    </a>
+
+    
+    <a href="https://www.facebook.com" target="_blank">
+      <ion-button expand="full">Sign Up with Facebook</ion-button>
+    </a>
+        
+        </form>
+      </ion-card-content>
+    </ion-card>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">signup</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
