@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { HomescreenPageRoutingModule } from './homescreen-routing.module';
 
 import { HomescreenPage } from './homescreen.page';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { HomescreenPage } from './homescreen.page';
     IonicModule,
     HomescreenPageRoutingModule
   ],
-  declarations: [HomescreenPage]
+  declarations: [HomescreenPage],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomescreenPageModule {}

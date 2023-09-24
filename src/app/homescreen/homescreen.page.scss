@@ -1,14 +1,386 @@
-.how-it-works {
-    background-color: #f78036; 
-    padding: 20px; 
+.full-width {
+  width: 100%;
+  height: 60vh; /* Adjust the height as needed */
+  background-color:  rgba(165, 42, 42); /* Set your desired background color */
+  display: flex; /* Use flexbox to align items vertically */
+  align-items: flex-start;
+  margin-top: 20px;
+  background: (40, 39, 39, 0.5);
+  color: #fff;
+
+  
+
+}
+
+.full-width h3 {
+  margin-right: 5px; /* Add spacing between h2 and ol */
+}
+
+.full-width li {
+  background-color: rgba(165, 42, 42); /* Set your desired background color for the ol tag */
+  padding: 5px; /* Add padding to the ol tag as needed */
+  font-size: 13px;
+}
+
+.phone-screenshot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  padding-top: 40px;
+  
+  
+}
+
+.phone-screenshot img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  
+  
+}
+
+/* home.page.scss */
+
+.section-gap {
+  height: 20px; /* Adjust the desired gap size */
+}
+
+.latest-updates-bar {
+  background-color: #a52a2a; /* Add background color */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 2px 0; /* Reduce top and bottom padding */
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px; /* Adjust font size */
+  height: 60px;
+}
+
+
+.animation-container {
+  height: 200px; /* Adjust the desired height of the animation container */
+  overflow: hidden; /* Clip overflowing content */
+  position: relative; /* Establish a positioning context for the animation */
+  
+}
+
+.animation-section {
+  animation: moveUp 10s linear infinite; /* Adjust animation duration as needed */
+  position: absolute;
+  top: 0;
+}
+
+.animation-section:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.heading {
+  background-color: #a52a2a; /* Add background color */
+  color:#fff; /* Text color */
+  text-align: center;
+  padding: 2px 0; /* Reduce top and bottom padding */
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px; /* Adjust font size */
+  height: 60px;
+}
+
+
+
+
+
+
+
+html,body{overflow-y: scroll; }
+
+ion-toolbar {
+  --background: #A52A2A;
+  --color: rgb(254, 250, 250);
+
+  --border-color: rgb(184, 184, 199);
+  --border-width: 4px 0;
+  --border-style: double;
+
+  --min-height: 80px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  
+}
+
+
+
+
+
+
+
+.custom-image {
+  position: absolute;
+  transform: translate(50%, 0);
+  height: 50%;
+  /* Set your desired height */
+  width: 50%;
+  /* Maintain aspect ratio */
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  /* Adjust image width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* Change text color */
+  background: rgba(40, 39, 39, 0.5);
+  /* Adjust the background color and opacity */
+  padding: 20px;
+  border-radius: 1%;
+
+  font-size:2vw;
+  text-indent: 0dvh;
+  
+  /* Adjust padding as needed */
+}
+
+swiper-slide {
+  // display:block;
+  position: relative;
+
+  // flex-direction: column;
+  // flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  // width: 100%;
+  // height: 100%;
+
+  // font-size: 18px;
+
+  text-align: center;
+  box-sizing: border-box;
+ 
+}
+
+swiper-slide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 5%;
+  // box-shadow: #A52A2A;
+}
+
+.content {
+  text-align: center;
+  /* Center the content */
+}
+
+h1 {
+  font-size: 1vw;
+  /* Adjust the font size for the heading */
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* Optionally adjust the font weight */
+  color: whitesmoke;
+  ;
+}
+
+p {
+  // font-size: 18px;
+  /* Adjust the font size for the text */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* Optionally adjust the font weight */
+  color: whitesmoke;
+}
+
+.hehe {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(108, 98, 88);
+  padding: -20%;
+  font-size: 24px;
+  position: relative;
+  width: 100%;
+  border-radius: 5%;
+  
+  
+
+}
+.btn{
+box-shadow: 0 0 20px #A52A2A;
+  width: 100%;
+ 
+  height: 100%;
+  border-radius: 90%;
+}
+
+.submit{
+  height: 5%;
+  
+}
+.submit1{
+  margin-top: 20%;
+  height: 20%;
+}
+
+
+.grid{
+  position: relative;
+  display:inline;
+  height:min-content;
+  width: 90%;
+}
+
+.grid2{
+  position: relative;
+  display:inline;
+  height:min-content;
+  width: 90%;
+  
+}
+
+ion-col {
+  text-align: center;
+}
+
+ion-row {
+  vertical-align: middle;
+ height:63%;
+ font-weight: bold;
+
+}
+
+.options{
+  align-content: left;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+
+}
+
+  // .cards{
+  //   height: 100%;
+  //   font-weight: bold;
     
-    ion-row {
-      justify-content: center;
-      ion-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+  // }
+
+
+// .image {
+//   width: 100%; /* Adjust width as needed */
+//   height: auto; /* Maintain aspect ratio */
+// }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (0.5) for the desired transparency */
+  border-radius: 5%;
+}
+.first_row{
+  vertical-align: middle;
+// width: 100%;
+align-self: center;
+ border-style: groove ;
+ border-radius: 20px;
+ box-shadow: 1px 1px 100px 4px #A52A2A;
+
+}
+
+ion-card{
+  box-shadow: #A52A2A;
+  box-shadow: 1px 1px 100px 4px #A52A2A;
+  border-radius: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+  ion-col{
+    width: auto;
+    height: auto;
+  }
+
+  ion-row{
+    vertical-align: middle;
+    height: auto;
+  } 
+
+ 
+  .first_row{
+    display:contents;
+    width: auto;
+    height: auto;
+    align-self: center;
+  }
+  .text-overlay{
+    font-size: 3vw;
+    width: 100%;
+  }
+
+  // .grid{
+  //   position: relative;
+  //   display:inline;
+  //   width: 100%;
+  //   height: fit-content;
+  // }
+
+  .submit{
+    margin-top: 1vw;
+    height: 20%;
+    width: 100%;
+    //transform: translate(0%, 20%);
+  }
+
+  .options{
+    display: none;
+    visibility: hidden;
+  }
+
+  swiper-slide img{
+    vertical-align: bottom;
+    width: auto;
+    height: auto;
+    border-radius: 5%;
+    // box-shadow: #A52A2A;
   }
   
+ion-title{
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+}  
+  
+ 
+}

@@ -3,6 +3,7 @@ ion-card {
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
   }
   
   ion-card-content {
@@ -14,5 +15,28 @@ ion-card {
     font-weight: bold;
     margin: 10px 0; 
     padding-left: 127px;
+  }
+
+  .Signup {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 5px;
+  }
+
+  .app-name {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #a52a2a;
+    text-align: center;
+    margin-right: 50px; /* Center the title horizontally */
+  }
+  
+  /* Style the back button icon */
+  ion-back-button {
+    --icon-color: #007bff; /* Change the color of the back button icon */
+    --icon-size: 24px; /* Adjust the size of the icon */
   }
   

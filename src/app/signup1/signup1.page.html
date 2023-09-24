@@ -1,45 +1,69 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>signup1</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/previous-page"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="app-name">Sanrakshan</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-card>
     <ion-card-header>
-      <ion-card-title>signup1</ion-card-title>
+      <ion-card-title style="text-align: center; color:#3880ff;">Create an Account</ion-card-title>
       
     </ion-card-header>
   
     <ion-card-content>
-      <form (ngSubmit)="onSignup1()">
-        <ion-item>
-          <ion-label position="floating">Email</ion-label>
-          <ion-input type="email" [(ngModel)]="email" required></ion-input>
+      <form [formGroup]="signupForm" (ngSubmit)="onSignup1()">
+        <ion-item lines="full">
+          <ion-label position="floating">Name</ion-label>
+          <ion-input type="text" formControlName="Name" required></ion-input>
         </ion-item>
-        <ion-item>
-          <ion-label position="floating">Password</ion-label>
-          <ion-input type="password" [(ngModel)]="password" required></ion-input>
-        </ion-item>
-        <ion-button expand="full" type="submit" (click)="SignUp1()">Sign Up</ion-button>
 
+        <ion-item lines="full">
+          <ion-label position="floating">User ID</ion-label>
+          <ion-input type="text" formControlName="userid" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" formControlName="email"  required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" formControlName="password" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Phone Number</ion-label>
+          <ion-input type="tel" formControlName="phoneNumber" required></ion-input>
+        </ion-item>
+
+        <div class="Signup">
+          <ion-button expand="block" shape="round" type="submit" (click)="SignUp1()" style="width: 100px; text-transform: none; font-size: medium " color="brick" >Sign Up</ion-button>
+            </div>
+        
+        
         <ion-label class="or-label">OR</ion-label>
         
-    <a href="https://www.google.com" target="_blank">
-      <ion-button expand="full">Sign Up with Google</ion-button>
-    </a>
+    
+      <ion-button expand="block" shape="round" (click)="signInwithGoogle()" style="text-transform: none; font-size: medium"><ion-icon name="logo-google" style="margin-right: 10px;"></ion-icon>Sign Up with Google</ion-button>
+    
 
     
-    <a href="https://www.facebook.com" target="_blank">
-      <ion-button expand="full">Sign Up with Facebook</ion-button>
-    </a>
-
+    
+      <ion-button expand="full" shape="round" (click)="signInwithFacebook()" style="text-transform: none; font-size: medium"><ion-icon name="logo-facebook" style="margin-right: 5px;"></ion-icon>Sign Up with Facebook</ion-button>
+    
+      <p style="text-align: center; font-size: 16px; line-height: 22px; color: #8c8c8c; margin: 0; margin-bottom: 15px; margin-top: 15px;"> Already have an account? <a routerLink="/login">Log In</a>
+      </p>
       </form>
     </ion-card-content>
   </ion-card>
-  <ion-header collapse="condense">
+  <!--<ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">signup1</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header>-->
 </ion-content>

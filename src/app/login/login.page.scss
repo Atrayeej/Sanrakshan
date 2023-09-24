@@ -1,50 +1,31 @@
-/*.registration-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding-top: 50px;
-}*/
-ion-item ion-label {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-start;
-  width: 100%;
-  margin-bottom: 0; /* Optional: Remove margin for spacing */
-}
-
-ion-item ion-select::part(icon) {
-  margin-left: 120px; /* Adjust the margin as needed */
-  
-}
-
 ion-card {
     width: 80%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
   }
   
   ion-card-content {
     padding: 20px;
   }
-
+  
   .or-label {
     text-align: center;
     font-weight: bold;
-    margin: 10px 0; /* Adjust the margin as needed */
+    margin: 10px 0; 
     padding-left: 127px;
-    margin-top: 15px;
   }
-  .Signup {
+
+  .Login {
     display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding-top: 20px;
+  padding-top: 5px;
   }
+
   .app-name {
     font-size: 24px; /* Adjust the font size as needed */
     font-weight: bold;
@@ -58,5 +39,3 @@ ion-card {
     --icon-color: #007bff; /* Change the color of the back button icon */
     --icon-size: 24px; /* Adjust the size of the icon */
   }
-  
-  

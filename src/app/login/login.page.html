@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/previous-page"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="app-name">Sanrakshan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <!--<ion-card-header>
+      <ion-card-title style="text-align: center;"></ion-card-title>
+      
+    </ion-card-header>-->
+  
+    <ion-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogIn()">
+        
+        <ion-item lines="full">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" formControlName="email"  required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" formControlName="password" required></ion-input>
+        </ion-item>
+
+        <div class="Login">
+          <ion-button expand="block" shape="round" type="submit" (click)="LogIn()" style="width: 100px; text-transform: none; font-size: medium; " color="brick" >Log In</ion-button>
+            </div>
+                
+        <ion-label class="or-label">OR</ion-label>
+          
+      <ion-button expand="block" shape="round" (click)="LogInwithGoogle()" style="text-transform: none; font-size: medium"><ion-icon name="logo-google" style="margin-right: 10px;"></ion-icon>Log In with Google</ion-button>
+        
+      <ion-button expand="full" shape="round" (click)="LogInwithFacebook()" style="text-transform: none; font-size: medium"><ion-icon name="logo-facebook" style="margin-right: 5px;"></ion-icon>Log In with Facebook</ion-button>
+    
+      <p style="text-align: center; font-size: 16px; line-height: 22px; color: #8c8c8c; margin: 0; margin-bottom: 15px; margin-top: 15px;"> New Here? <a routerLink="/signup1">Create Account</a>
+      </p>
+      </form>
+      </ion-card-content>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+

@@ -1,28 +1,287 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>homescreen</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-card class="how-it-works">
-    <ion-row>
-      <ion-col size="12" size-md="6">
-        
-        <p>Here's how our app works:</p>
-        <li>1. open the app</li>
-        <li>2. sign up as per your role</li>
-        <li>3. login into home</li>
+<ion-header scroll="true">
+  <ion-toolbar>
+
+    <ion-title>Sanrakshan </ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button fill="" class="options">
+        <ion-icon slot="start" name=""></ion-icon>
+        Home
+      </ion-button>
+      <ion-button fill="" class="options">
+        <ion-icon slot="start" name=""></ion-icon>
+        maps
+      </ion-button>
+      <ion-button fill="" class="options">
+        <ion-icon slot="start" name=""></ion-icon>
+        Fund us
+      </ion-button>
+      <ion-button fill="" class="options">
+        <ion-icon slot="start" name=""></ion-icon>
+        Resources
+      </ion-button>
+      <ion-button fill="" class="options">
+        <ion-icon slot="start" name=""></ion-icon>
+        Log-Out
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+
+      <ion-select interface="popover" placeholder="Menu">
+        <ion-label>Language</ion-label>
+        <ion-select-option default value="4">Home</ion-select-option>
+        <ion-select-option value="2">Maps</ion-select-option>
+        <ion-select-option  value="3">Fund us</ion-select-option>
+        <ion-select-option  value="3">Resources</ion-select-option>
+        <ion-select-option  value="3">Log-out</ion-select-option>
+      </ion-select>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical">
+  
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+
+
+
+  <ion-grid class="grid">
+    <ion-row class="first_row">
+      <ion-col>
+        <ion-row class="submit1">
+          <ion-col>
+            <div class="hehe">
+              JUST ONE CLICK AWAY FROM REGISTERING
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="submit">
+          <ion-col>
+            <div class="btn">
+              <ion-button color="danger">Register</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
       </ion-col>
-      <ion-col size="12" size-md="6">
-        
-        <img src="appui.png" alt="App Screenshot">
+
+
+
+      <ion-col>
+        <ion-content>
+          <swiper-container (slidechange)="swiperSlideChange($event)" class="swipper">
+            <swiper-slide> <img
+                src="assets\image3.jpeg" />
+              <div class="text-overlay">
+                <div class="content">
+                  <p>NAMASTE,WELCOME TO SANRAKSHAN</p>
+                  <p> VIGILANT AT EVERY MOMENT FOR YOUR SAFETY</p>
+
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide> <img src="assets\An-NDRF-team-conducts-a-rescue-operation-on-Ring-R_1689301922245_1689301940703.jpeg">
+              <div class="text-overlay">
+                <div class="content">
+                  
+                  <p>AAPDA SURAKSHA,JEEVAN RAKSHA</p>
+
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide> <img src="assets\img4.jpeg"/>
+              <div class="text-overlay">
+                <div class="content">
+                  
+                  <p>ARE YOU PREPARED FOR IT?</p>
+
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </ion-content>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="grid2" >
+    <ion-row class="">
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="assets\alert.jpeg" />
+          <ion-card-header>
+            <ion-card-title>EMERGENCY ALERTS</ion-card-title>
+
+          </ion-card-header>
+
+          <ion-card-content>
+            App can be used to receive and broadcast emergency
+            alerts from official sources, providing critical
+            information about disasters and their impact.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="assets\headp.jpeg" />
+          <ion-card-header>
+            <ion-card-title>24x7 HELPLINE AND CHATBOT </ion-card-title>
+
+          </ion-card-header>
+
+          <ion-card-content>
+            24X7 helpline services available so that minimum cassualities occur.Ensuring the privacy and
+            security.handles sensitive information securely, comply with privacy regulations.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="assets\loc.jpeg" />
+          <ion-card-header>
+            <ion-card-title>REAL-TIME DISASTER TRACKING</ion-card-title>
+
+          </ion-card-header>
+
+          <ion-card-content>
+            Registered agencies can update their real
+            time GPS coordinates. A map-based
+            interface within the app displays the
+            locations of all registered agencies.
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
-  </ion-card>
-  <ion-header collapse="condense">
+  </ion-grid>
+  <!--<ion-toolbar>
+    <ion-title>homescreen</ion-title>
+  </ion-toolbar>-->
+</ion-header>
+
+
+  <ion-grid class="full-width">
+    <ion-row>
+      <ion-col>
+        <h3 style="font-weight: bold;">Steps to use this app:</h3>
+                
+          <li> Sign up as Rescue team/ Volunteer</li>
+          <li> Identification Verification.</li>
+          <li> Filter the nearby location of rescue teams.</li>
+          <li> Send alerts at the time of emergency.</li>
+          <li> Rescue teams can collaborate and communicate with each other.</li>
+          <!-- Add more steps as needed -->
+        
+      </ion-col>
+      <ion-col>
+        <div class="phone-screenshot">
+        <img src="assets/appui.png" alt="App Screenshot">
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="section-gap"></div>
+
+  <div class="latest-updates-bar">
+    <h3>Latest Updates</h3>
+  </div>
+
+
+  <div class="animation-container">
+    <div class="animation-section">
+      <ion-list class="news-list">
+        <ion-item *ngFor="let news of newsUpdates" (click)="onNewsUpdateClick(news)">
+          <!-- Display news update content here -->
+          <div class="news-update">
+            <h3>{{ news.title }}</h3>
+            <p><a>{{ news.description }}</a></p>
+            <!-- Add more news update elements as needed -->
+          </div>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+
+  <div class="section-gap"></div>
+
+  <div class="heading"><h2>Resources</h2></div>
+  <div class="video-container">
+    <!-- Iterate through trustedVideoUrlArray and display the videos -->
+    <ng-container *ngFor="let trustedLink of trustedVideoUrlArray; let i = index">
+      <div class="video" [class.hidden]="i >= maxVisibleVideos">
+        <iframe
+          width="100%"
+          height="250"
+          [src]="trustedLink"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </ng-container>
+
+    <!-- "View More" button -->
+    <ion-button class="video-button"
+      style="width: 120px; margin-left: 145px;"
+      expand="block" shape="round" color="brick"
+      (click)="toggleVideos()"
+      [hidden]="maxVisibleVideos >= trustedVideoUrlArray.length"
+    >
+      View More
+    </ion-button>
+  </div>
+
+  <div class="section-gap"></div>
+
+
+  <!--<ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">homescreen</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header>-->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>
+        <div style="width: 50%; height: 100px; float: left; background: #A52A2A; "> 
+          
+        Sanrakshan-vigilant every moment for your raksha<br> <br>follow us 
+        <ion-icon name="logo-instagram" size="large"></ion-icon>
+<ion-icon name="logo-facebook" size="large"></ion-icon>
+<ion-icon name="logo-twitter" size="large"></ion-icon>
+<ion-icon name="logo-linkedin" size="large" ></ion-icon>
+      </div>
+      
+    
+      <div style="margin-left: 50%; height: 100px; background: #A52A2A; "> 
+        Made by-Team Sanrakshan
+      <br><br>Contact us
+      <ion-icon name="information-circle-outline" size="large"></ion-icon>
+      <ion-icon name="call-outline" size="large"></ion-icon>
+      <ion-icon name="mail-outline" size="large"></ion-icon>
+      <br>
+    
+        
+          
+      </div>
+      <div style="margin-left: 80%; height: 100px; background: #A52A2A; margin-top:-7% ; "> 
+     
+     INITIATIVE BY<br><BR>
+      MINISTRY OF <br>HOME AFFAIRS 
+        
+          
+      </div>
+    
+
+  
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>

@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>signup</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/previous-page"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="app-name">Sanrakshan</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,34 +11,70 @@
   <!--<div class="registration-buttons">
     <ion-button expand="full" (click)="signUp()">Sign up</ion-button>
     </div>-->
-    <ion-card>
+    <ion-card style="margin-top: 10px;">
       <ion-card-header>
-        <ion-card-title>Signup</ion-card-title>
+        <ion-card-title style="text-align: center;">Create an Account</ion-card-title>
         <!--<ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
       </ion-card-header>
     
       <ion-card-content>
-        <form (ngSubmit)="onSignup()">
-          <ion-item>
+        <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+          <ion-item lines="full">
             <ion-label position="floating">Email</ion-label>
-            <ion-input type="email" [(ngModel)]="email" required></ion-input>
+            <ion-input type="email" formControlName="email"  required></ion-input>
           </ion-item>
-          <ion-item>
+
+          <ion-item lines="full">
             <ion-label position="floating">Password</ion-label>
-            <ion-input type="password" [(ngModel)]="password" required></ion-input>
+            <ion-input type="password" formControlName="password" required></ion-input>
           </ion-item>
-          <ion-button expand="full" type="submit" (click)="signUp()">Sign Up</ion-button>
-        
-          <ion-label class="or-label">OR</ion-label>
+
+          <ion-item lines="full">
+            <ion-label position="floating">Organization Name</ion-label>
+            <ion-input type="text" formControlName="orgName" required></ion-input>
+          </ion-item>
+
+          <ion-item >
+            <ion-label position="floating">Organization Type</ion-label>
+            <ion-select formControlName="orgType" placeholder="select the type">
+              <ion-select-option value="Medical">Medical</ion-select-option>
+              <ion-select-option value="Fire Department">Fire Department</ion-select-option>
+              <ion-select-option value="Search and Rescue">Search and Rescue</ion-select-option>
+              <!-- Add more options as needed -->
+            </ion-select>
+          </ion-item>
+
+          <ion-item lines="full">
+            <ion-label position="floating">Location</ion-label>
+            <ion-input type="text" formControlName="location" required></ion-input>
+          </ion-item>
+
+          <ion-item lines="full">
+            <ion-label position="floating">Phone Number</ion-label>
+            <ion-input type="tel" formControlName="phoneNumber" required></ion-input>
+          </ion-item>
+
+          <ion-item lines="full">
+            <ion-label position="floating">Company's Description (Optional)</ion-label>
+            <ion-input type="text" formControlName="description"></ion-input>
+          </ion-item>
+          
+  
+
+<!-- ... (remaining form fields) -->
+          <div class="Signup">
+          <ion-button expand="block" shape="round" type="submit" (click)="signUp()" style="width: 100px; text-transform: none; font-size: medium;" color="brick">Sign Up</ion-button>
+            </div>
+          <!--<ion-label class="or-label">OR</ion-label>
         
     <a href="https://www.google.com" target="_blank">
-      <ion-button expand="full">Sign Up with Google</ion-button>
+      <ion-button expand="full" >Sign Up with Google</ion-button>
     </a>
 
     
     <a href="https://www.facebook.com" target="_blank">
       <ion-button expand="full">Sign Up with Facebook</ion-button>
-    </a>
+    </a>-->
         
         </form>
       </ion-card-content>
