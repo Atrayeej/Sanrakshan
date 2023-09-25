@@ -12,15 +12,45 @@
 
 }
 
-.full-width h3 {
-  margin-right: 5px; /* Add spacing between h2 and ol */
+.app-description {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  margin-top: 3px; /* Add margin to separate from the phone screenshot */
 }
 
-.full-width li {
-  background-color: rgba(165, 42, 42); /* Set your desired background color for the ol tag */
-  padding: 5px; /* Add padding to the ol tag as needed */
+
+
+.app-description ol {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.app-description li {
+  position: relative; /* Position relative to allow adjusting left margin */
+  padding-left: 30px; /* Add left padding for bullet points */
+  margin-bottom: 10px; /* Adjust spacing between list items */
   font-size: 13px;
 }
+
+.app-description li:before {
+  content: "\2022"; /* Use a bullet point character */
+  position: absolute; /* Position the bullet point absolutely */
+  left: 0; /* Adjust left position to align with text */
+  top: 3px; /* Adjust top position to center vertically */
+}
+
+
+.full-width h3 {
+  margin-right: 5px; 
+}
+
+/*.full-width li {
+  background-color: rgba(165, 42, 42); 
+  padding: 5px; 
+  font-size: ;
+  //text-align: center;
+  //justify-content: center;
+}*/
 
 .phone-screenshot {
   display: flex;
@@ -35,8 +65,11 @@
 .phone-screenshot img {
   max-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 300px;
+  height: 250px;
+  margin-top: 62px;
+  margin-left: 50px;
+
   
   
 }
@@ -381,6 +414,11 @@ ion-title{
   font-weight: bold;
   font-family:'Times New Roman', Times, serif;
 }  
-  
+@media screen and (max-width: 1200px) {
+  ion-footer{
+    width: 1200px;
+    height: auto;
+    
+  }
  
-}
+}}

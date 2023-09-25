@@ -75,7 +75,7 @@
 
 
       <ion-col>
-        <ion-content>
+        <!--<ion-content>-->
           <swiper-container (slidechange)="swiperSlideChange($event)" class="swipper">
             <swiper-slide> <img
                 src="assets\image3.jpeg" />
@@ -106,7 +106,7 @@
               </div>
             </swiper-slide>
           </swiper-container>
-        </ion-content>
+        <!--</ion-content>-->
       </ion-col>
 
 
@@ -127,6 +127,9 @@
             App can be used to receive and broadcast emergency
             alerts from official sources, providing critical
             information about disasters and their impact.
+            <a href="https://example.com">
+              <ion-icon name="flash-outline"></ion-icon>
+            </a>
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -139,8 +142,8 @@
           </ion-card-header>
 
           <ion-card-content>
-            24X7 helpline services available so that minimum cassualities occur.Ensuring the privacy and
-            security.handles sensitive information securely, comply with privacy regulations.
+            24X7 helpline services available so that minimum cassualities occur.Ensuring the security
+            .handles sensitive information securely, comply with privacy regulations.
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -171,19 +174,23 @@
   <ion-grid class="full-width">
     <ion-row>
       <ion-col>
+        
         <h3 style="font-weight: bold;">Steps to use this app:</h3>
-                
+        <div class="app-description">
+           <ol>     
           <li> Sign up as Rescue team/ Volunteer</li>
           <li> Identification Verification.</li>
           <li> Filter the nearby location of rescue teams.</li>
           <li> Send alerts at the time of emergency.</li>
           <li> Rescue teams can collaborate and communicate with each other.</li>
           <!-- Add more steps as needed -->
+          </ol>
+          </div>
         
       </ion-col>
       <ion-col>
         <div class="phone-screenshot">
-        <img src="assets/appui.png" alt="App Screenshot">
+        <img src="assets/appui1.png" alt="App Screenshot">
       </div>
       </ion-col>
     </ion-row>
@@ -250,17 +257,18 @@
   <ion-footer>
     <ion-toolbar>
       <ion-title>
-        <div style="width: 50%; height: 100px; float: left; background: #A52A2A; "> 
+        <div style="width: 50%; height: 100px; float: left; background: #A52A2A; font-size: 15px; font-weight: lighter; "> 
           
-        Sanrakshan-vigilant every moment for your raksha<br> <br>follow us 
-        <ion-icon name="logo-instagram" size="large"></ion-icon>
-<ion-icon name="logo-facebook" size="large"></ion-icon>
-<ion-icon name="logo-twitter" size="large"></ion-icon>
-<ion-icon name="logo-linkedin" size="large" ></ion-icon>
+        Sanrakshan-vigilant every<br>
+         moment for your raksha<br> follow us 
+        <ion-icon name="logo-instagram" size="small"></ion-icon>
+<ion-icon name="logo-facebook" size="small"></ion-icon>
+<ion-icon name="logo-twitter" size="small"></ion-icon>
+<ion-icon name="logo-linkedin" size="small" ></ion-icon><br>Made by-Team Sanrakshan
       </div>
       
     
-      <div style="margin-left: 50%; height: 100px; background: #A52A2A; "> 
+      <div style="margin-left: 50%; height: 100px; background: #A52A2A; font-weight: lighter; "> 
         Made by-Team Sanrakshan
       <br><br>Contact us
       <ion-icon name="information-circle-outline" size="large"></ion-icon>
