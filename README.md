@@ -19,6 +19,13 @@ In the face of natural and man-made calamities, timely and efficient coordinatio
 ![image](https://github.com/Atrayeej/Sanrakshan/assets/112728345/6a752c97-fb2b-474c-841e-734b4ff6053b)
 ## Technology/Tech Stack
 ![image](https://github.com/Atrayeej/Sanrakshan/assets/112728345/1185a39e-dc1d-45f2-81f2-d015f3fe8908)
+## Team Members
+1.Atrayee Jha
+2.Arshia Swain 
+3.Kapileshwar Rout
+4.Jeeban Jyoti Mohanty
+5.Anirudha Khuntia
+6.Shakti Sharan
 
 
 
